@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+/* temperature */
+
+.app-container{
+  margin-left: 40%;
+  margin-top: 90px;
+  width: 320px;
+  height: 460px;
+  background-color: blue;
+  border-radius: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temperature-display{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 50%;
   color: white;
+  height: 250px;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  border: 3px solid white;
+  transition: background 2.s;
 }
 
-.App-link {
-  color: #61dafb;
+
+button{
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: rgb(105, 104, 104);
+  border: 2px solid #ffffff;
+  margin-left: 70px;
+  margin-top: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+  background-color:rgb(184, 184, 184);
+  cursor: pointer;
+}
+
+.cold{
+  background-color: #035aa6;
+}
+
+.hot{
+  background-color: #ff5200;
 }
